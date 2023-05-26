@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import React from "react";
 import SidebarListItem from "./SidebarListItem";
-import "font-awesome/css/font-awesome.min.css";
 import { ToggleButton } from "components/button";
 
 const SidebarListStyled = styled.div`

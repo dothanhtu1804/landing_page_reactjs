@@ -3,8 +3,8 @@ import { Button } from "../button";
 import ethIcon from "assets/card/eth_icon.svg";
 
 const StyledCard = styled.div`
-  width: ${(props) => `${props.width}px`};
-  height: ${(props) => `${props.height}px`};
+  width: ${(props) => `${props.width}`};
+  height: ${(props) => `${props.height}`};
   padding: 24px;
   background: ${(props) => props.background};
   border-radius: 20px;

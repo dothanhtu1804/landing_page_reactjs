@@ -10,6 +10,7 @@ const Card_bannerStyled = styled.div`
   grid-template-columns: 65% 35%;
   height: 354px;
   margin-bottom: 32px;
+  justify-content: space-between;
   
   *.carousel{
     margin: 0;
@@ -19,10 +20,9 @@ const Card_bannerStyled = styled.div`
 
 
   .statistic {
-    width: 350px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
@@ -78,10 +78,10 @@ const Card_banner = () => {
         </Carousel.Item>
       </Carousel>
       <div className="statistic">
-        <Card title={"Revenue"} amount="5.00" percent={12.3}></Card>
-        <Card title={"Revenue"} amount="5.00" percent={12.3}></Card>
-        <Card title={"Revenue"} amount="5.00" percent={12.3}></Card>
-        <Card title={"Revenue"} amount="5.00" percent={12.3}></Card>
+        <Card width={"165px"} height={"120px"} title={"Revenue"} amount="5.00" percent={12.3}></Card>
+        <Card width={"165px"} height={"120px"} title={"Revenue"} amount="5.00" percent={12.3}></Card>
+        <Card width={"165px"} height={"120px"} title={"Revenue"} amount="5.00" percent={12.3}></Card>
+        <Card width={"165px"} height={"120px"} title={"Revenue"} amount="5.00" percent={12.3}></Card>
       </div>
     </Card_bannerStyled>
   );
